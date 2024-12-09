@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LT_Selenium" parallel="tests">
+    <test thread-count="3" name="Chrome on Windows 10">
+        <parameter name="browser" value="chrome" />
+        <parameter name="browserVersion" value="131.0" />
+        <parameter name="platform" value="Windows 10" />
+        <classes>
+            <class name="selenium_LT.LambdaTestCertifications_Selenium" />
+        </classes>
+    </test>
+
+    <test thread-count="3" name="Safari on macOS Catalina">
+        <parameter name="browser" value="safari" />
+        <parameter name="browserVersion" value="18" />
+        <parameter name="platform" value="MacOS Sequoia" />
+        <classes>
+            <class name="selenium_LT.LambdaTestCertifications_Selenium" />
+        </classes>
+    </test>
+</suite> <!-- LT_TestNg -->
